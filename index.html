@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Budget App with local storage</h1>
+
+  <section>
+    <h2>Add Budget</h2>
+    <form id="budgetForm">
+      <label for="budgetAmount">Amount:</label>
+      <input type="number" id="budgetAmount" required>
+      <button type="submit">Add Budget</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Add Expense</h2>
+    <form id="expenseForm">
+      <label for="expenseCategory">Category:</label>
+      <input type="text" id="expenseCategory" required>
+      <label for="expenseAmount">Amount:</label>
+      <input type="number" id="expenseAmount" required>
+      <label for="expenseDate">Date:</label>
+      <input type="date" id="expenseDate" required>
+      <button type="submit">Add Expense</button>
+    </form>
+  </section>
+
+  <section id="summarySection">
+    <h2>Summary</h2>
+    <div>
+      <span>Total Amount: </span>
+      <span id="totalAmount">$0.00</span>
+    </div>
+    <div>
+      <span>Total Spent: </span>
+      <span id="spentAmount">$0.00</span>
+    </div>
+    <div>
+      <span>Remaining Amount: </span>
+      <span id="remainingAmount">$0.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Expense List</h2>
+    <ul id="expenseList"></ul>
+  </section>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

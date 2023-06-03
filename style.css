@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url("./images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 150px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffbd50;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(32,30, 30, 0.7);
+  }
+  
+  section{
+    margin-bottom: 30px;
+    background-color: rgba(32, 30, 30, 0.8);
+    border-radius: 5px;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(131,131, 131, 0.7);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #ffbd50;
+  }
+
+  label{
+    color: #ffbd50;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button[type="submit"] {
+    border-radius: 30px;
+    padding: 8px 16px;
+    background-color: rgb(131, 131, 131);
+    color: #ffbd50;
+    border: none;
+    border: #ffbd50 3px solid;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: transparent;
+    border: #ffbd50 2px solid;
+    transition: .6s ease-in;
+  }
+
+  #summarySection >div > span{
+      display: flex;
+      margin: 20px 0;
+      color: #ffbd50;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffbd50;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  li span {
+    margin-right: 10px;
+  }
+  
+  li button {
+    background-color: rgb(131, 131, 131);
+    color: #ffbd50;
+    border-radius: 30px;
+    font-size: 19px;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    border: 3px solid rgb(131, 131, 131);
+    color: rgb(131, 131, 131) ;
+    transition: ease-in .5s;
+    background-color: transparent;
+    transition: ease .4s;
+  }
+  
+  input[type="number"],input[type="date"], input[type="text"] {
+    padding: 0 8px ;
+    border: 4px solid rgb(131, 131, 131);
+    border-radius: 4px;
+    background-color: #ffbd50;
+  }
+  
+  input[type="number"]:focus,input[type="date"]:focus,input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    background-color: #f8f7f6;
+  }
+  
+  #totalAmount,#spentAmount,#remainingAmount {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffbd50;
+  }
+  
